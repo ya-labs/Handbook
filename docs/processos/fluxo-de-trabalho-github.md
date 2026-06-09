@@ -25,8 +25,6 @@ Colunas recomendadas:
 Backlog
 Pendente
 Em andamento
-Bloqueado
-Validação
 Concluído
 Ideias futuras
 ```
@@ -36,8 +34,6 @@ Uso recomendado:
 - `Backlog`: tarefas mapeadas, mas ainda não priorizadas.
 - `Pendente`: tarefas priorizadas e prontas para começar.
 - `Em andamento`: tarefa sendo desenvolvida em branch própria.
-- `Bloqueado`: tarefa que depende de outra entrega ou decisão.
-- `Validação`: tarefa implementada e aguardando revisão, teste ou aprovação.
 - `Concluído`: tarefa finalizada, revisada e integrada.
 - `Ideias futuras`: sugestões que ainda não entraram no planejamento.
 
@@ -148,7 +144,15 @@ Padrão geral:
 area/tipoNumero-descricao-curta
 ```
 
-Para documentação, não repita `docs/docs`. Use:
+Para issues que não possuam área definida, não repita o tipo. 
+
+Ao invés de:
+
+```text
+docs/docsNumero-descricao-curta
+```
+
+Use:
 
 ```text
 docsNumero-descricao-curta
