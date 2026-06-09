@@ -174,6 +174,54 @@ Regras:
 - Não trabalhe em duas issues diferentes na mesma branch.
 - Não misture front-end e back-end na mesma branch sem necessidade real.
 
+## Branches de lote documental
+
+Para documentação, alterações pequenas e relacionadas podem ser agrupadas em uma única issue, branch e Pull Request quando fizerem parte do mesmo objetivo.
+
+Esse fluxo serve para reduzir cerimônia operacional em trabalhos documentais como planejamento inicial, mapa do problema, matriz de alternativas, escopo inicial, riscos, decisões e próximos passos.
+
+Use branch individual quando:
+
+- a documentação tiver objetivo próprio e independente;
+- a alteração for crítica, extensa ou de maior impacto;
+- o documento precisar de revisão, validação ou aprovação separada;
+- o tema não fizer parte do mesmo planejamento ou contexto.
+
+Use branch de lote documental quando:
+
+- os documentos forem pequenos e relacionados;
+- todos fizerem parte da mesma intenção de trabalho;
+- a revisão puder acontecer no mesmo Pull Request;
+- a issue principal tiver escopo fechado e critérios de aceite claros.
+
+A branch de lote deve ter começo, fim e objetivo claro. Ela não deve virar uma branch fixa permanente de documentação.
+
+Exemplo de branch:
+
+```text
+docs042-planejamento-inicial-yahub
+```
+
+Para organizar o lote, use uma issue principal com checklist quando os documentos forem simples e tiverem baixo acoplamento decisório.
+
+Exemplo:
+
+```md
+- [ ] Mapa do problema
+- [ ] Matriz de alternativas
+- [ ] Escopo inicial
+- [ ] Riscos e decisões
+- [ ] Próximos passos
+```
+
+Use subissues quando houver entregas documentais relacionadas, mas com dependências, responsáveis, validações ou discussões próprias.
+
+Mesmo em lote documental, preserve a rastreabilidade:
+
+```text
+Issue principal -> Branch de lote -> Commit -> Pull Request -> Merge -> Validação
+```
+
 ## Padrão de commits
 
 As mensagens de commit devem seguir o formato:
@@ -385,10 +433,17 @@ Quando a IA for usada para implementar, revisar ou documentar algo, ela deve ref
 
 - criação ou identificação da issue relacionada;
 - uso de branch própria para cada issue;
+- uso de branch de lote documental quando uma issue principal agrupar documentos pequenos e relacionados;
 - separação entre tarefas de front-end, back-end, infraestrutura e documentação;
 - commits no padrão do projeto;
 - Pull Requests com contexto, mudanças, observações e vínculo com a issue;
 - documentação de contratos de API quando houver integração entre front-end e back-end.
+
+Ao classificar uma demanda documental, a IA deve identificar se a solicitação é uma alteração isolada ou um lote documental.
+
+Quando os documentos forem pequenos e fizerem parte do mesmo objetivo, a IA deve sugerir agrupamento em issue principal com checklist ou subissues, evitando criar uma branch por documento sem necessidade.
+
+Quando os temas forem independentes, críticos ou de maior impacto, a IA deve manter issues, branches e Pull Requests separados.
 
 Antes de alterar arquivos, a IA deve validar:
 
@@ -405,11 +460,10 @@ Se a solicitação estiver fora do fluxo documentado, a IA deve avisar o usuári
 
 Não trabalhe duas issues diferentes na mesma branch.
 
-Cada issue deve ter sua própria branch.
+Cada issue deve ter sua própria branch. Em documentação, uma issue principal pode usar branch de lote quando agrupar documentos pequenos e relacionados dentro de um objetivo claro.
 
 Esse fluxo mantém o histórico limpo, facilita revisão, reduz conflitos e deixa claro o caminho:
 
 ```text
 Issue -> Branch -> Commit -> Pull Request -> Merge -> Validação -> Release
 ```
-
