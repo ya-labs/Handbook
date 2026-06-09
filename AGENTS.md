@@ -156,8 +156,7 @@ A IA deve ajudar a YA LABS a manter rastreabilidade e consistência.
 Toda alteração relevante deve conectar:
 
 ```text
-Issue -> Branch -> Commit -> Pull Request -> Merge -> Validação
+Issue -> Branch -> Commit -> Pull Request -> Merge
 ```
 
 Esse fluxo mantém a documentação organizada e facilita a reutilização dos padrões em todos os projetos da organização.
-

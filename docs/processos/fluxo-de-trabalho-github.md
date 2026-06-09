@@ -17,14 +17,14 @@ O objetivo é manter tarefas, código, revisão, documentação e histórico con
 
 O GitHub Project deve funcionar como o quadro oficial de acompanhamento do projeto.
 
+Em projetos da YA LABS, toda issue relevante deve ser vinculada ao GitHub Project aplicável. Quando o repositório não fizer parte da YA LABS ou quando ainda não houver Project definido, o usuário e a IA devem decidir explicitamente se a issue será vinculada a algum Project.
+
 Colunas recomendadas:
 
 ```text
 Backlog
 Pendente
 Em andamento
-Bloqueado
-Validação
 Concluído
 Ideias futuras
 ```
@@ -34,8 +34,6 @@ Uso recomendado:
 - `Backlog`: tarefas mapeadas, mas ainda não priorizadas.
 - `Pendente`: tarefas priorizadas e prontas para começar.
 - `Em andamento`: tarefa sendo desenvolvida em branch própria.
-- `Bloqueado`: tarefa que depende de outra entrega ou decisão.
-- `Validação`: tarefa implementada e aguardando revisão, teste ou aprovação.
 - `Concluído`: tarefa finalizada, revisada e integrada.
 - `Ideias futuras`: sugestões que ainda não entraram no planejamento.
 
@@ -43,27 +41,23 @@ Uso recomendado:
 
 Cada projeto pode adaptar as labels conforme sua stack, mas a YA LABS deve manter uma taxonomia simples.
 
-Labels de tipo recomendadas:
+Ao criar o handbook específico de um projeto, o usuário e a IA devem declarar quais labels serão usadas no repositório. A base abaixo é recomendada para projetos da YA LABS, mas cada projeto deve escolher apenas as labels que fizerem sentido para seu contexto.
 
-```text
-bug
-documentation
-feature
-refactor
-tooling
-```
+| Label | Tipo | Cor |
+| --- | --- | --- |
+| `bug` | Tipo | `#D73A4A` |
+| `feature` | Tipo | `#0E8A16` |
+| `docs` | Tipo | `#0075CA` |
+| `refactor` | Tipo | `#C5DEF5` |
+| `tooling` | Tipo | `#5319E7` |
+| `frontend` | Área | `#FBCA04` |
+| `backend` | Área | `#1D76DB` |
+| `infra` | Área | `#006B75` |
+| `ui/ux` | Área | `#D876E3` |
 
-Labels de área recomendadas:
+Use `docs` como label padrão para documentação. Evite criar labels diferentes para a mesma intenção. Por exemplo, não use `fix` como label se `bug` já representa correção de comportamento incorreto.
 
-```text
-frontend
-backend
-docs
-infra
-ui/ux
-```
-
-Evite criar labels diferentes para a mesma intenção. Por exemplo, não use `fix` como label se `bug` já representa correção de comportamento incorreto.
+Labels classificam a issue no GitHub. Prefixos de nomenclatura identificam o tipo do trabalho em branches, commits e PRs. Por isso, um trabalho com prefixo `fix` normalmente usa a label `bug`, e um trabalho com prefixo `feat` normalmente usa a label `feature`.
 
 ## Padrão de issues
 
@@ -75,6 +69,24 @@ Exemplo:
 
 - Backend: criar endpoint de autenticação.
 - Frontend: criar tela de login consumindo a API.
+
+Título recomendado:
+
+```text
+descrição objetiva da tarefa
+```
+
+Exemplos:
+
+```text
+Definir labels padrão do projeto
+Adicionar autenticação por e-mail
+Corrigir validação do formulário de login
+```
+
+O título da issue deve funcionar como um cartão de tarefa. Não use prefixo como `docs:`, `feat:` ou `fix:` no título da issue; use as labels para indicar tipo e área.
+
+Ao criar issue em projeto da YA LABS, atribua o usuário solicitante como responsável padrão, salvo quando houver orientação diferente. Também vincule a issue ao GitHub Project aplicável e classifique com as labels definidas para o projeto.
 
 ### Template de issue
 
@@ -120,7 +132,7 @@ Exemplo:
 - Depende da issue #12.
 ```
 
-Enquanto a dependência não for concluída, a issue dependente deve ficar em `Bloqueado`.
+Enquanto a dependência não for concluída, a issue dependente não deve entrar em desenvolvimento.
 
 ## Padrão de branches
 
@@ -132,7 +144,15 @@ Padrão geral:
 area/tipoNumero-descricao-curta
 ```
 
-Para documentação, não repita `docs/docs`. Use:
+Para issues que não possuam área definida, não repita o tipo. 
+
+Ao invés de:
+
+```text
+docs/docsNumero-descricao-curta
+```
+
+Use:
 
 ```text
 docsNumero-descricao-curta
@@ -227,21 +247,20 @@ Issue principal -> Branch de lote -> Commit -> Pull Request -> Merge -> Validaç
 As mensagens de commit devem seguir o formato:
 
 ```text
-area/tipo: descrição curta
+tipo: descrição curta
 ```
 
 Exemplos:
 
 ```text
-front/feat: adiciona tela de login
-back/fix: corrige retorno de autenticação inválida
-infra/chore: ajusta workflow de deploy
+feat: adiciona tela de login
+fix: corrige retorno de autenticação inválida
+chore: ajusta workflow de deploy
 docs: documenta fluxo de trabalho com GitHub
 ```
 
 Regras:
 
-- A área deve indicar onde a alteração principal aconteceu.
 - O tipo deve indicar a natureza da mudança.
 - Para alterações apenas de documentação, use `docs: descrição curta`.
 - A descrição deve ser curta, clara e em português.
@@ -251,18 +270,17 @@ Regras:
 ## Fluxo de desenvolvimento
 
 1. Criar ou identificar a issue.
-2. Adicionar a issue ao GitHub Project.
-3. Classificar com labels de área e tipo.
-4. Criar branch própria a partir da issue.
-5. Desenvolver apenas o escopo da issue na branch.
-6. Fazer commits seguindo o padrão do projeto.
-7. Abrir Pull Request.
-8. Vincular o PR à issue usando `Closes #numero`.
-9. Mover a issue para `Validação`.
-10. Revisar e testar.
+2. Atribuir o usuário solicitante como responsável padrão, salvo orientação diferente.
+3. Adicionar a issue ao GitHub Project aplicável, quando houver.
+4. Classificar com labels de área e tipo definidas para o projeto.
+5. Criar branch própria a partir da issue.
+6. Desenvolver apenas o escopo da issue na branch.
+7. Fazer commits seguindo o padrão do projeto.
+8. Abrir Pull Request.
+9. Vincular o PR à issue usando `Closes #numero`.
+10. Revisar e validar o próprio trabalho.
 11. Fazer merge na branch de desenvolvimento do projeto.
-12. Validar a integração.
-13. Preparar release quando houver versão pronta para publicação.
+12. Preparar release quando houver versão pronta para publicação.
 
 ## Padrão de Pull Requests
 
@@ -271,22 +289,18 @@ O Pull Request deve explicar o que foi feito e deixar claro o impacto da altera�
 Título recomendado:
 
 ```text
-Tipo: descrição curta da tarefa ISSUE #XX (PR #YY)
+tipo: descrição objetiva
 ```
 
 Exemplos:
 
 ```text
-Feature: adiciona autenticação por e-mail ISSUE #6 (PR #33)
-Fix: corrige validação do formulário de login ISSUE #36 (PR #37)
-Docs: atualiza fluxo de trabalho com GitHub ISSUE #40 (PR #41)
+feat: adiciona autenticação por e-mail
+fix: corrige validação do formulário de login
+docs: atualiza fluxo de trabalho com GitHub
 ```
 
-O trecho `ISSUE #XX (PR #YY)` facilita a rastreabilidade na lista de Pull Requests.
-
-Como o número do PR só existe depois da criação do Pull Request, crie o PR primeiro com a issue no título e edite o título em seguida para adicionar `(PR #YY)`.
-
-Mesmo com a issue no título, mantenha `Closes #numero` no corpo do PR. É essa referência que garante o fechamento automático da issue quando o PR for mergeado.
+Use o corpo do PR para vincular a issue com `Closes #numero`. A branch numerada e o vínculo no corpo do PR garantem a rastreabilidade sem deixar o título pesado.
 
 ### Template de Pull Request
 
@@ -465,5 +479,5 @@ Cada issue deve ter sua própria branch. Em documentação, uma issue principal 
 Esse fluxo mantém o histórico limpo, facilita revisão, reduz conflitos e deixa claro o caminho:
 
 ```text
-Issue -> Branch -> Commit -> Pull Request -> Merge -> Validação -> Release
+Issue -> Branch -> Commit -> Pull Request -> Merge -> Release
 ```
