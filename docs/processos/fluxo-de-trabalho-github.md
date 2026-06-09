@@ -61,7 +61,7 @@ Ao criar o handbook específico de um projeto, o usuário e a IA devem declarar 
 
 Use `docs` como label padrão para documentação. Evite criar labels diferentes para a mesma intenção. Por exemplo, não use `fix` como label se `bug` já representa correção de comportamento incorreto.
 
-Labels classificam a issue no GitHub. Prefixos de nomenclatura identificam o tipo do trabalho em títulos, branches, commits e PRs. Por isso, uma issue com prefixo `fix:` normalmente usa a label `bug`, e uma issue com prefixo `feat:` normalmente usa a label `feature`.
+Labels classificam a issue no GitHub. Prefixos de nomenclatura identificam o tipo do trabalho em branches, commits e PRs. Por isso, um trabalho com prefixo `fix` normalmente usa a label `bug`, e um trabalho com prefixo `feat` normalmente usa a label `feature`.
 
 ## Padrão de issues
 
@@ -77,16 +77,18 @@ Exemplo:
 Título recomendado:
 
 ```text
-tipo: descrição objetiva
+descrição objetiva da tarefa
 ```
 
 Exemplos:
 
 ```text
-docs: define labels padrão do projeto
-feat: adiciona autenticação por e-mail
-fix: corrige validação do formulário de login
+Definir labels padrão do projeto
+Adicionar autenticação por e-mail
+Corrigir validação do formulário de login
 ```
+
+O título da issue deve funcionar como um cartão de tarefa. Não use prefixo como `docs:`, `feat:` ou `fix:` no título da issue; use as labels para indicar tipo e área.
 
 Ao criar issue em projeto da YA LABS, atribua o usuário solicitante como responsável padrão, salvo quando houver orientação diferente. Também vincule a issue ao GitHub Project aplicável e classifique com as labels definidas para o projeto.
 
