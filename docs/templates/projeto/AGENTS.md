@@ -15,6 +15,7 @@ A IA deve:
 - evitar overengineering;
 - preservar acentos e textos em português usando UTF-8;
 - manter rastreabilidade entre issue, branch, commit e Pull Request;
+- conferir labels, responsável e GitHub Project antes de criar issues;
 - sugerir mensagem de commit ao alterar arquivos.
 
 ## Fluxo de trabalho
@@ -28,6 +29,20 @@ Antes de executar uma alteração relevante, valide:
 5. Compatibilidade com o fluxo do projeto.
 
 Se não houver issue ou se a branch estiver incompatível, avise o usuário antes de editar ou registre a exceção quando houver autorização explícita.
+
+## Issues, labels e Project
+
+Antes de criar uma issue, confira as labels existentes no repositório e compare com as labels declaradas para o projeto.
+
+Quando faltar uma label padrão da YA LABS que faça sentido para o projeto, sugira a criação antes de classificar a issue.
+
+Ao criar issue em projeto da YA LABS:
+
+- atribua o usuário solicitante como responsável padrão, salvo orientação diferente;
+- vincule a issue ao GitHub Project aplicável;
+- aplique as labels de tipo e área compatíveis com o escopo.
+
+Quando o repositório não fizer parte da YA LABS ou quando não houver GitHub Project definido, pergunte ao usuário se a issue deve receber responsável, labels ou vínculo com Project.
 
 ## Código
 
@@ -57,4 +72,3 @@ Exemplo:
 ```text
 Commit sugerido: `docs: atualiza documentação inicial do projeto`
 ```
-
