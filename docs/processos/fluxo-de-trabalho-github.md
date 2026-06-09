@@ -132,7 +132,7 @@ Exemplo:
 - Depende da issue #12.
 ```
 
-Enquanto a dependência não for concluída, a issue dependente deve ficar em `Bloqueado`.
+Enquanto a dependência não for concluída, a issue dependente não deve entrar em desenvolvimento.
 
 ## Padrão de branches
 
@@ -230,11 +230,9 @@ Regras:
 7. Fazer commits seguindo o padrão do projeto.
 8. Abrir Pull Request.
 9. Vincular o PR à issue usando `Closes #numero`.
-10. Mover a issue para `Validação`.
-11. Revisar e testar.
-12. Fazer merge na branch de desenvolvimento do projeto.
-13. Validar a integração.
-14. Preparar release quando houver versão pronta para publicação.
+10. Revisar e validar o próprio trabalho.
+11. Fazer merge na branch de desenvolvimento do projeto.
+12. Preparar release quando houver versão pronta para publicação.
 
 ## Padrão de Pull Requests
 
@@ -426,5 +424,5 @@ Cada issue deve ter sua própria branch.
 Esse fluxo mantém o histórico limpo, facilita revisão, reduz conflitos e deixa claro o caminho:
 
 ```text
-Issue -> Branch -> Commit -> Pull Request -> Merge -> Validação -> Release
+Issue -> Branch -> Commit -> Pull Request -> Merge -> Release
 ```

@@ -56,7 +56,7 @@ Em contexto de projeto, a IA deve:
 Toda mudança relevante deve se conectar ao fluxo:
 
 ```text
-Issue -> Branch -> Commit -> Pull Request -> Merge -> Validação
+Issue -> Branch -> Commit -> Pull Request -> Merge
 ```
 
 Se a IA identificar que não existe issue ou que a branch atual não combina com a mudança, deve avisar antes de editar ou registrar a exceção quando o usuário pedir para prosseguir.
@@ -66,4 +66,3 @@ Se a IA identificar que não existe issue ou que a branch atual não combina com
 IA não substitui revisão técnica.
 
 O uso correto é tratar a IA como uma parceira de execução e análise, não como fonte automática de verdade.
-

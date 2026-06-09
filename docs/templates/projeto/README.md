@@ -54,7 +54,7 @@ Este projeto segue os padrões da YA LABS documentados no Handbook.
 Mudanças relevantes devem seguir o fluxo:
 
 ```text
-Issue -> Branch -> Commit -> Pull Request -> Merge -> Validação
+Issue -> Branch -> Commit -> Pull Request -> Merge
 ```
 
 ### Labels do projeto
