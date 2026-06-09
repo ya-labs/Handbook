@@ -20,9 +20,9 @@ Crie apenas as pastas e documentos que fizerem sentido para o momento atual do p
 
 ## Referência organizacional
 
-Este projeto segue os padrões da YA LABS documentados no Handbook.
+Este projeto segue os padrões da YA LABS documentados no YABook.
 
-Use o Handbook como referência para:
+Use o YABook como referência para:
 
 - fluxo de trabalho com GitHub;
 - padrão de issues;

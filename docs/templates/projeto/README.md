@@ -47,7 +47,7 @@ A documentação técnica do projeto fica em:
 docs/
 ```
 
-Este projeto segue os padrões da YA LABS documentados no Handbook.
+Este projeto segue os padrões da YA LABS documentados no YABook.
 
 ## Fluxo de trabalho
 

@@ -1,4 +1,4 @@
-# Documentação do Handbook
+# Documentação do YABook
 
 Este diretório reúne a documentação organizacional da YA LABS.
 
@@ -19,7 +19,7 @@ O conteúdo daqui deve ser usado como referência para padronizar processos, gui
 
 ## O que não deve ficar aqui
 
-Documentos específicos de produto não devem ficar no Handbook.
+Documentos específicos de produto não devem ficar no YABook.
 
 Exemplos:
 

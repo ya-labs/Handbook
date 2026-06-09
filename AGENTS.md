@@ -20,7 +20,7 @@ A IA deve:
 
 ## Escopo do repositório
 
-O Handbook deve conter padrões reutilizáveis da YA LABS, como:
+O YABook deve conter padrões reutilizáveis da YA LABS, como:
 
 - processos de trabalho;
 - padrões de issue, branch, commit, PR e release;
@@ -28,7 +28,7 @@ O Handbook deve conter padrões reutilizáveis da YA LABS, como:
 - orientações de uso de IA;
 - templates para novos projetos.
 
-O Handbook não deve conter documentação específica de produto, como:
+O YABook não deve conter documentação específica de produto, como:
 
 - endpoints reais de um projeto;
 - arquitetura específica de uma aplicação;
@@ -57,7 +57,7 @@ Se o usuário quiser prosseguir mesmo fora do fluxo documentado, peça confirma�
 
 ## Issues
 
-Cada mudança relevante no Handbook deve ter uma issue própria.
+Cada mudança relevante no YABook deve ter uma issue própria.
 
 Use o padrão documentado em:
 
@@ -85,7 +85,7 @@ docsNumero-descricao-curta
 Exemplo:
 
 ```text
-docs001-adapta-documentacao-base-handbook
+docs001-adapta-documentacao-base-yabook
 ```
 
 Não use acentos, espaços ou caracteres especiais no nome da branch.
@@ -101,7 +101,7 @@ docs: descrição curta
 Exemplos:
 
 ```text
-docs: adapta documentação-base do handbook
+docs: adapta documentação-base do yabook
 docs: documenta fluxo de trabalho da organização
 docs: adiciona template inicial de projeto
 ```

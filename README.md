@@ -1,8 +1,8 @@
-# Handbook YA LABS
+# YABook - Handbook de Padrões Internos da YA LABS
 
 Este repositório concentra os padrões internos da YA LABS para documentação, fluxo de trabalho, uso de IA e organização de projetos.
 
-O objetivo do Handbook é servir como fonte principal para decisões recorrentes da organização, evitando que cada projeto precise reinventar seu próprio processo do zero.
+O objetivo do YABook é servir como fonte principal para decisões recorrentes da organização, evitando que cada projeto precise reinventar seu próprio processo do zero.
 
 ## Para que serve
 
@@ -28,7 +28,7 @@ Exemplos de documentação específica de projeto:
 - roadmap;
 - integrações.
 
-O Handbook fica responsável pelo padrão organizacional. Projetos da YA LABS podem copiar os templates deste repositório e adaptar apenas o que for próprio do produto.
+O YABook fica responsável pelo padrão organizacional. Projetos da YA LABS podem copiar os templates deste repositório e adaptar apenas o que for próprio do produto.
 
 ## Estrutura inicial
 
