@@ -1,28 +1,28 @@
 # 🎨 YA LABS - Design System
 
-> Official design system and visual identity of YA LABS.
+> Sistema oficial de identidade visual da YA LABS.
 >
 > **Slogan:** Code. Automate. Scale.
 
 ---
 
-# Brand Philosophy
+# Filosofia da Marca
 
-YA LABS is built around:
+A YA LABS é construída sobre os pilares de:
 
-- Engineering
-- Automation
-- Scalability
-- Simplicity
-- Professionalism
+- Engenharia
+- Automação
+- Escalabilidade
+- Simplicidade
+- Profissionalismo
 
-The visual identity prioritizes high contrast, clean layouts and a strong technological appearance.
+A identidade visual prioriza alto contraste, interfaces limpas e uma aparência tecnológica moderna.
 
 ---
 
-# Core Colors
+# Cores Principais
 
-## Primary Color
+## Cor Primária
 
 <div style="width:220px">
 
@@ -37,13 +37,13 @@ border-radius:16px;
 
 `#0A1A5E`
 
-Official primary color of the organization.
+Cor principal da organização.
 
 </div>
 
 ---
 
-## Accent Color
+## Cor de Destaque
 
 <div style="width:220px">
 
@@ -58,13 +58,13 @@ border-radius:16px;
 
 `#2563FF`
 
-Used for actions, highlights and interactive elements.
+Utilizada para ações, destaques e elementos interativos.
 
 </div>
 
 ---
 
-## White
+## Branco
 
 <div style="width:220px">
 
@@ -80,21 +80,21 @@ border-radius:16px;
 
 `#FFFFFF`
 
-Primary background color for light interfaces.
+Cor principal para fundos em interfaces claras.
 
 </div>
 
 ---
 
-# Light Theme
+# Tema Claro
 
-Default theme for:
+Tema padrão para:
 
-- Website
-- Documentation
-- Landing Pages
-- Presentations
-- Marketing Materials
+- Site institucional
+- Documentação
+- Landing pages
+- Apresentações
+- Materiais de divulgação
 
 <div style="display:flex;gap:20px;flex-wrap:wrap;">
 
@@ -117,7 +117,7 @@ Surface
 <div>
 <div style="width:120px;height:120px;background:#0A1A5E;border-radius:12px;"></div>
 
-Primary
+Primária
 
 `#0A1A5E`
 </div>
@@ -125,7 +125,7 @@ Primary
 <div>
 <div style="width:120px;height:120px;background:#2563FF;border-radius:12px;"></div>
 
-Accent
+Destaque
 
 `#2563FF`
 </div>
@@ -133,7 +133,7 @@ Accent
 <div>
 <div style="width:120px;height:120px;background:#0F172A;border-radius:12px;"></div>
 
-Text
+Texto
 
 `#0F172A`
 </div>
@@ -142,14 +142,14 @@ Text
 
 ---
 
-# Dark Theme
+# Tema Escuro
 
-Default theme for:
+Tema padrão para:
 
 - Dashboards
-- Internal Tools
-- Development Platforms
-- Administrative Panels
+- Ferramentas internas
+- Plataformas de desenvolvimento
+- Painéis administrativos
 
 <div style="display:flex;gap:20px;flex-wrap:wrap;">
 
@@ -172,7 +172,7 @@ Surface
 <div>
 <div style="width:120px;height:120px;background:#FFFFFF;border:1px solid #DDD;border-radius:12px;"></div>
 
-Primary
+Primária
 
 `#FFFFFF`
 </div>
@@ -180,7 +180,7 @@ Primary
 <div>
 <div style="width:120px;height:120px;background:#2563FF;border-radius:12px;"></div>
 
-Accent
+Destaque
 
 `#2563FF`
 </div>
@@ -188,7 +188,7 @@ Accent
 <div>
 <div style="width:120px;height:120px;background:#CBD5E1;border-radius:12px;"></div>
 
-Text
+Texto
 
 `#CBD5E1`
 </div>
@@ -197,14 +197,14 @@ Text
 
 ---
 
-# Status Colors
+# Cores de Status
 
 <div style="display:flex;gap:20px;flex-wrap:wrap;">
 
 <div>
 <div style="width:120px;height:120px;background:#22C55E;border-radius:12px;"></div>
 
-Success
+Sucesso
 
 `#22C55E`
 </div>
@@ -212,7 +212,7 @@ Success
 <div>
 <div style="width:120px;height:120px;background:#F59E0B;border-radius:12px;"></div>
 
-Warning
+Aviso
 
 `#F59E0B`
 </div>
@@ -220,7 +220,7 @@ Warning
 <div>
 <div style="width:120px;height:120px;background:#EF4444;border-radius:12px;"></div>
 
-Error
+Erro
 
 `#EF4444`
 </div>
@@ -228,7 +228,7 @@ Error
 <div>
 <div style="width:120px;height:120px;background:#0EA5E9;border-radius:12px;"></div>
 
-Info
+Informação
 
 `#0EA5E9`
 </div>
@@ -237,7 +237,7 @@ Info
 
 ---
 
-# Official Gradient
+# Gradiente Oficial
 
 <div
 style="
@@ -263,17 +263,17 @@ background: linear-gradient(
 
 ---
 
-# CSS Tokens
+# Variáveis CSS
 
 ```css
 :root {
 
-    /* Brand */
+    /* Marca */
 
     --ya-primary: #0A1A5E;
     --ya-accent: #2563FF;
 
-    /* Light Theme */
+    /* Tema Claro */
 
     --ya-background: #FFFFFF;
     --ya-surface: #F8FAFC;
@@ -292,144 +292,159 @@ background: linear-gradient(
 
 ---
 
-# Usage Rules
+# Diretrizes de Uso
 
-## Recommended Distribution
+## Distribuição Recomendada
 
 ```txt
-70% White
+70% Branco
 20% YA Dark Blue
 10% YA Blue
 ```
 
-## Use YA Dark Blue For
+## Utilizar YA Dark Blue em
 
-- Headers
-- Navigation
+- Cabeçalhos
+- Navegação
 - Branding
-- Logos
-- Important Sections
-- Footers
+- Logotipos
+- Seções importantes
+- Rodapés
 
-## Use YA Blue For
+## Utilizar YA Blue em
 
-- Buttons
+- Botões
 - Links
-- Hover States
-- Interactive Elements
-- Highlights
+- Estados de hover
+- Elementos interativos
+- Destaques
 
-## Use White For
+## Utilizar Branco em
 
-- Main Backgrounds
-- Reading Areas
-- Documentation
-- Content Pages
-
----
-
-# Design Governance
-
-The YA LABS Design System exists to create consistency across the ecosystem.
-
-Projects are encouraged to adopt:
-
-- YA LABS colors
-- Typography standards
-- Layout principles
-- Component patterns
-- Accessibility guidelines
-
-However, the design system is not mandatory for every project.
+- Fundos principais
+- Áreas de leitura
+- Documentação
+- Páginas de conteúdo
 
 ---
 
-# Design Exceptions
+# Governança de Design
 
-Some projects may intentionally diverge from the YA LABS design language.
+O Design System da YA LABS existe para criar consistência entre os projetos do ecossistema.
 
-Reasons may include:
+Os projetos são incentivados a utilizar:
 
-- Experimental concepts
-- Learning projects
-- Community projects
-- Game-related applications
-- Event-specific initiatives
-- Independent products
+- Cores da YA LABS
+- Padrões tipográficos
+- Princípios de layout
+- Componentes compartilhados
+- Diretrizes de acessibilidade
 
-In these cases, the project team may define its own:
-
-- Color palette
-- Typography
-- Visual language
-- Branding
-- User experience
-
-provided that the project remains aligned with YA LABS values.
+Entretanto, o Design System não é obrigatório para todos os projetos.
 
 ---
 
-# Project Classification
+# Exceções de Design
 
-## Core Projects
+Alguns projetos podem intencionalmente divergir da identidade visual da YA LABS.
 
-Strategic projects that directly represent YA LABS.
+Motivos incluem:
 
-Expected to follow the official design system.
+- Conceitos experimentais
+- Projetos de estudo
+- Ferramentas comunitárias
+- Aplicações voltadas para jogos
+- Eventos específicos
+- Produtos independentes
 
-Examples:
+Nesses casos, o projeto pode definir sua própria:
+
+- Paleta de cores
+- Tipografia
+- Linguagem visual
+- Identidade de marca
+- Experiência de usuário
+
+desde que continue alinhado aos valores da YA LABS.
+
+---
+
+# Classificação de Projetos
+
+## Projetos Principais
+
+Projetos estratégicos que representam diretamente a YA LABS.
+
+Devem seguir o Design System oficial.
+
+Exemplos:
 
 - YABook
 - DevLab
 - Git2SVN
 - YA HUB
-- Internal Platforms
-- Future Corporate Products
+- Plataformas Internas
+- Produtos corporativos futuros
 
 ---
 
-## Independent Projects
+## Projetos Independentes
 
-Projects that may establish their own visual identity.
+Projetos que podem possuir identidade visual própria.
 
-Examples:
+Exemplos:
 
 - CADE O DANO
-- Hackathon Projects
-- Experimental Products
-- Community Tools
-- Future Entertainment Projects
+- Projetos de Hackathon
+- Produtos Experimentais
+- Ferramentas Comunitárias
+- Projetos de Entretenimento
 
-These projects may adopt completely different branding when doing so better serves their goals.
-
----
-
-# Principle
-
-Consistency is preferred.
-
-Purpose takes priority.
-
-A project should never sacrifice its identity simply to match the organization's visual style.
+Esses projetos podem adotar uma identidade visual completamente diferente quando isso fizer mais sentido para seus objetivos.
 
 ---
 
-# Official Brand Colors
+# Princípio Fundamental
 
-Primary
+Consistência é desejável.
+
+Propósito tem prioridade.
+
+Um projeto nunca deve sacrificar sua identidade apenas para seguir o padrão visual da organização.
+
+---
+
+# Idioma Oficial
+
+O idioma padrão da YA LABS é:
+
+**Português (Brasil)**
+
+Exceções:
+
+- Projetos com público internacional
+- Projetos open source globais
+- Produtos destinados a usuários não falantes de português
+- Documentações específicas para mercados internacionais
+
+---
+
+# Cores Oficiais da Marca
+
+Primária
 
 `#0A1A5E`
 
-Accent
+Destaque
 
 `#2563FF`
 
-Background
+Fundo
 
 `#FFFFFF`
 
 ---
 
-# Official Slogan
+# Slogan Oficial
 
 **Code. Automate. Scale.**
